@@ -1,0 +1,249 @@
+<style>
+@font-face {
+  font-family: 'Source Sans Pro Regular';
+  src: url('/assets/font/SourceSansPro-Regular.otf');
+  src: url('/assets/font/SourceSansPro-Regular.otf') format('opentype');
+}
+
+body, html{
+  /*font-family: 'Source Sans Pro Regular';*/
+	font-size: 13px;
+	background-color: #f5f5f5;
+}
+
+body.body_login{
+	background-color: #fff;
+}
+
+.ordinal {
+  font-variant-numeric: ordinal;
+  font-family: "Source Sans Pro";
+}
+
+.box_image {
+  max-height:300px;
+  overflow:hidden;
+  overflow-y:scroll;
+}
+
+.box_image .col-md-2 {
+  border:1px solid transparent;
+  content:"";
+  display: inline-flex;
+  margin-bottom:10px;
+  min-height:170px;
+  max-height:170px;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.box_image .col-md-2:hover {
+  border:1px solid #666;
+}
+
+.box_image .box_image_console {
+  min-height:130px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 130px;
+}
+
+.box_image .box_image_console > img {
+  margin-left:auto !important;
+  margin-right:auto !important;
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.box_image .box_image_console:nth-child(4){
+  clear:both;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: .875rem;
+    border-radius: 0.2rem;
+}
+
+.btn-warning {
+    color: #000;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-check:focus+.btn-warning, .btn-warning:focus {
+    color: #000;
+    background-color: #ffca2c;
+    border-color: #ffc720;
+    box-shadow: 0 0 0 0.25rem rgb(217 164 6 / 50%);
+}
+
+.btn-warning:hover {
+    color: #000;
+    background-color: #ffca2c;
+    border-color: #ffc720;
+}
+
+.cke_editor_content .cke_inner .cke_contents{
+  height:400px !important;
+}
+
+.custom-select, .form-control {
+    padding: 6px 20px;
+    background: #ffffff;
+}
+
+.dropdown-menu {
+	font-size: 13px;
+}
+
+.dropdown-menu.show:before{
+	content: "";
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+.filter-card{
+	padding: 5px;
+	background: linear-gradient(#eee, #ccc);
+}
+
+.form-control-sm {
+    min-height: calc(1.5em + 0.5rem + 2px);
+    padding: 0.25rem 0.5rem;
+	font-size:13px;
+    border-radius: 0.25rem;
+}
+
+.form-label{
+	font-weight: bold;
+}
+
+.ft-11 {font-size: 11px;}
+.ft-12 {font-size: 12px;}
+.ft-13 {font-size: 13px;}
+
+.ft-bold {font-weight: bold;}
+
+.ft-clr-blue-bjb{color: #1B517E;}
+.ft-clr-white {color: white !important;}
+.ft-clr-yellow-bjb{color:#CBB125;}
+.ft-clr-grey{color: #E5E5E5;}
+
+.m-b-0{
+	margin-bottom: 0px;
+}
+
+.navbar.mynav{
+	background-color: #ffffff;
+	box-shadow: 0 6px 16px rgb(22 87 128 / 8%); 
+}
+
+.navbar.mynav .navbar-nav .nav-link{
+	color: #00499d;
+}
+
+.navbar.mynav .navbar-nav .nav-link.active {
+    color: #222222;
+    font-weight: bold;
+}
+
+.navbar-brand{
+	width: 252px;
+	height: 73px;
+}
+
+.row-table{
+	width: 100%;
+}
+
+.section-card{
+	background-color: #fff;
+	background-clip: initial; 
+	border: 1px solid rgba(0,0,0,.125); 
+	border-radius: 0.25rem; 
+	padding: 15px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+	font-size: 13px;
+}
+
+.scroller {
+  width: 100%; 
+  max-height:200px; 
+  padding-left:0px; 
+  overflow:auto;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.uk-padding-remove-vertical {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+.uk-section {
+    display: flow-root;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.uk-section>:last-child {
+    margin-bottom: 0;
+}
+
+.is-footerbar {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+}
+
+.uk-container-expand {
+    max-width: none;
+}
+
+.is-footerbar-area {
+    height: 12px;
+    width: 100%;
+}
+
+.is-footerbar-start {
+    background-color: #14517d;
+}
+
+.is-footerbar-middle {
+    background-color: #2ea0de;
+}
+
+.is-footerbar-end {
+    background-color: #edc817;
+}
+
+table.table thead tr th{
+	color: #1B517E;
+    background-color: #fff;
+    border-color: #fff;
+	background-image: linear-gradient(#fff, #ccc);
+}
+
+.text-muted {
+	color: #adb5bd !important;
+}
+
+.text-white{
+	color: #ffffff !important;
+}
+</style>
